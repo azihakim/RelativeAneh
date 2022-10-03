@@ -44,6 +44,31 @@
         android:text="Copyright\nby You"
         android:gravity="center"
         android:layout_centerInParent="true" />
-</RelativeLayout>
+    <CheckBox
+        android:id="@+id/cb_iya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iya"
+        android:layout_alignParentBottom="true"/>
+    <CheckBox
+        android:id="@+id/cb_tidak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tidak"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/cb_iya"/>
+    <TextView
+        android:id="@+id/tv_sayanyatakan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saya menyatakan data ini :"
+        android:layout_above="@id/cb_iya"/>
 
-r
+    <Spinner
+        android:id="@+id/sp_kemungkinan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cb_iya"
+        android:layout_toRightOf="@id/tv_sayanyatakan"
+        android:entries="@array/arr_kemungkinan"/>
+</RelativeLayout>
